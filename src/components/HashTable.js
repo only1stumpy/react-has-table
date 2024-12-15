@@ -96,7 +96,8 @@ const HashTable = ({ data }) => {
         setIsLoading(false);
       }, 1000);
     }
-  }, [data, method]);
+  }, [data, method]); // eslint-disable-next-line react-hooks/exhaustive-deps
+
   
 
     const handleSearch = () => {
